@@ -2,7 +2,7 @@ Source: bottle-login
 Maintainer: Kirill Klenov <horneds@gmail.com>
 Section: python
 Priority: optional
-Build-Depends: python-setuptools (>= 0.6b3), python-all (>= 2.6.6-3), debhelper (>= 7)
+Build-Depends: python-setuptools (>= 0.6b3), python-all (>= 2.6.6-3), debhelper (>= 7), python3-all, python3-setuptools
 Standards-Version: 3.9.1
 
 
@@ -33,4 +33,27 @@ Description: UNKNOWN
  .
 
 
-
+Package: python3-bottle-login
+Architecture: all
+Depends: ${misc:Depends}, ${python3:Depends}
+Description: UNKNOWN
+ Bottle Login
+ ############
+ .
+ .. _description:
+ .
+ Bottle Login -- Implement users' sessions in Bottle web framework.
+ .
+ .. _badges:
+ .
+ .. image:: http://img.shields.io/travis/klen/bottle-login.svg?style=flat-square
+     :target: http://travis-ci.org/klen/bottle-login
+     :alt: Build Status
+ .
+ .. image:: http://img.shields.io/coveralls/klen/bottle-login.svg?style=flat-square
+     :target: https://coveralls.io/r/klen/bottle-login
+     :alt: Coverals
+ .
+ .. image:: http://img.shields.io/pypi/v/bottle-login.svg?style=flat-square
+     :target: https://pypi.python.org/pypi/bottle-login
+ .
